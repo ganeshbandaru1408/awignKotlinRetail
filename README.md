@@ -92,9 +92,3 @@ Solution approach:
 3. There is a dedicated service, which calculates the discounts based on the payment information.
 4. There is a service, which serves as a map between the user type and the logic, which should be applied to calculate the discount. The idea is to escape the numerous if-else or switch statements and get a complexity of 1. To every type of user, a discount type is mapped. Additionally, to every discount type, a "callback" function is mapped, which is the custom logic for calculating the discount.
 
-Test approach:
-
-There are several test classes, which simply assert that the services work correctly. There is one "integration" test for the rest service, which mocks http request and asserts that responses. Some of the test classes share the same test logic, so a dedicated parent class is defined for them.
-There are no test cases for the data classes, because they are simply getters and setters.
-
-
