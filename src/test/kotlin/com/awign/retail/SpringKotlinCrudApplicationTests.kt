@@ -1,4 +1,4 @@
-package com.javatechie.spring.kotlin.crud.api
+package com.awign.retail
 
 import org.junit.Test
 import org.junit.runner.RunWith
